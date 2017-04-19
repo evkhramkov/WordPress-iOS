@@ -36,6 +36,7 @@ class LoginTests: XCTestCase {
         app.buttons.element(boundBy: 1).tap()
     }
 
+    /*
     func testSelfHostedLoginWithoutJetPack() {
         loginSelfHosted(username: WordPressTestCredentials.selfHostedUser, password: WordPressTestCredentials.selfHostedPassword, url: WordPressTestCredentials.selfHostedSiteURL)
 
@@ -51,4 +52,5 @@ class LoginTests: XCTestCase {
         createAccount(email: email, username: username, password: WordPressTestCredentials.oneStepPassword)
         waitForElementToAppear(element: app.tabBars[ elementStringIDs.mainNavigationBar ], timeout: 20)
     }
+ */
 }
