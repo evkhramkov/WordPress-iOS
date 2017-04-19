@@ -124,6 +124,7 @@ PODS:
   - Starscream (2.0.2)
   - SVProgressHUD (2.1.2)
   - UIDeviceIdentifier (0.5.0)
+  - VSMobileCenterExtensions (0.1.3)
   - WordPress-AppbotX (1.0.6)
   - WordPress-Aztec-iOS (0.5a8):
     - Gridicons (= 0.5)
@@ -171,6 +172,7 @@ DEPENDENCIES:
   - Starscream (from `https://github.com/wordpress-mobile/Starscream`, branch `wordpress-ios`)
   - SVProgressHUD (~> 2.1.2)
   - UIDeviceIdentifier (~> 0.1)
+  - VSMobileCenterExtensions
   - WordPress-AppbotX (from `https://github.com/wordpress-mobile/appbotx.git`, commit `479d05f7d6b963c9b44040e6ea9f190e8bd9a47a`)
   - WordPress-Aztec-iOS (= 0.5a8)
   - WordPress-iOS-Editor (= 1.9.1)
@@ -236,6 +238,7 @@ SPEC CHECKSUMS:
   Starscream: 4ee1be18da5170faafce1698225b61f9765634d5
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
   UIDeviceIdentifier: a959a6d4f51036b4180dd31fb26483a820f1cc46
+  VSMobileCenterExtensions: e6e0cd4cc96020c9af943b5b5f4a5e8bfba86770
   WordPress-AppbotX: b5abc0ba45e3da5827f84e9f346c963180f1b545
   WordPress-Aztec-iOS: 4bf5814f53791ceac398f93358a8da08eae7ff0a
   WordPress-iOS-Editor: 995f47fbf745f34fb392103ec97c0edb7f062f21
@@ -246,6 +249,6 @@ SPEC CHECKSUMS:
   WPMediaPicker: 239fef5c97d76acd3f9fb66c408be3e7deb3295e
   wpxmlrpc: bfc572f62ce7ee897f6f38b098d2ba08732ecef4
 
-PODFILE CHECKSUM: ba81674b3b8f0580323cbdd51c5c2df286e877f9
+PODFILE CHECKSUM: a4a4471f7f2ddf132d8c69cba0326202b8313d60
 
 COCOAPODS: 1.2.1

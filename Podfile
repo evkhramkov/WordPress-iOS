@@ -61,12 +61,8 @@ abstract_target 'WordPress_Base' do
       pod 'Expecta', '1.0.5'
       pod 'Nimble', '~> 5.0.0'
     end
+    target 'WordPressUITests' do
+      pod 'VSMobileCenterExtensions'
+    end
   end
-
-  target 'WordPressShareExtension' do
-  end
-
-  target 'WordPressTodayWidget' do
-  end
-
 end
