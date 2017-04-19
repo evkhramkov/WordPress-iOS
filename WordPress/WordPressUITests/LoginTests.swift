@@ -1,4 +1,5 @@
 import XCTest
+import VSMobileCenterExtensions
 
 class LoginTests: XCTestCase {
 
@@ -24,15 +25,19 @@ class LoginTests: XCTestCase {
     }
 
     func testSimpleLogin() {
+        MCLabel.labelStep("Launched app")
         simpleLogin(username: WordPressTestCredentials.oneStepUser, password: WordPressTestCredentials.oneStepPassword)
 
         waitForElementToAppear(element: app.tabBars[ elementStringIDs.mainNavigationBar ])
+        MCLabel.labelStep("Logged In")
     }
 
     func testUnsuccessfulLogin() {
+        MCLabel.labelStep("Launched app")
         simpleLogin(username: WordPressTestCredentials.oneStepUser, password: "password")
 
         waitForElementToAppear(element: app.images[ "icon-alert" ])
+        MCLabel.labelStep("Bad credentials alert")
         app.buttons.element(boundBy: 1).tap()
     }
 

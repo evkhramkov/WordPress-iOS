@@ -1,4 +1,5 @@
 import XCTest
+import VSMobileCenterExtensions
 
 class MainNavigationTests: XCTestCase {
 
@@ -26,20 +27,25 @@ class MainNavigationTests: XCTestCase {
         simpleLogin(username: WordPressTestCredentials.oneStepUser, password: WordPressTestCredentials.oneStepPassword)
         self.waitForElementToAppear(element: mainNavigationTabBar)
 
+        MCLabel.labelStep("Launched app and logged int")
         mainNavigationTabBar.buttons["My Sites"].tap()
         mainNavigationTabBar.buttons["My Sites"].tap()
         self.waitForElementToAppear(element: app.tables["Blogs"])
 
         mainNavigationTabBar.buttons["Reader"].tap()
         self.waitForElementToAppear(element: app.tables["Reader"])
+        MCLabel.labelStep("Reader")
 
         mainNavigationTabBar.buttons["Me"].tap()
         self.waitForElementToAppear(element: app.staticTexts["Me"])
+        MCLabel.labelStep("Me")
 
         mainNavigationTabBar.buttons["Notifications"].tap()
         self.waitForElementToAppear(element: app.staticTexts["Notifications"])
+        MCLabel.labelStep("Notificatios")
 
         mainNavigationTabBar.buttons["New Post"].tap()
+        MCLabel.labelStep("New Post")
         app.navigationBars["WPPostView"].buttons["Cancel"].tap()
     }
 

@@ -1,4 +1,5 @@
 import XCTest
+import VSMobileCenterExtensions
 
 public struct elementStringIDs {
     // General
@@ -106,6 +107,9 @@ extension XCTestCase {
         let passwordSecureTextField = app.secureTextFields[ elementStringIDs.loginPasswordField ]
         passwordSecureTextField.tap()
         passwordSecureTextField.typeText( password )
+        
+        MCLabel.labelStep("Entered username and password")
+        
         app.buttons[ elementStringIDs.loginSubmitButton ].tap()
     }
 
