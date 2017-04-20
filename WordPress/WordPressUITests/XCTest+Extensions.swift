@@ -5,6 +5,7 @@ public struct elementStringIDs {
     // General
     static var mainNavigationBar = "Main Navigation"
     static var mainNavigationMeButton = "meTabButton"
+    static var mainNavigationMeButtonOlder = "Me"
     static var mainNavigationMySitesButton = "mySitesTabButton"
 
     // Login page
@@ -83,7 +84,10 @@ extension XCTestCase {
     public func logoutIfNeeded() {
         let app = XCUIApplication()
         if !app.textFields[ elementStringIDs.loginUsernameField ].exists && !app.textFields[ elementStringIDs.nuxUsernameField ].exists {
-            app.tabBars[ elementStringIDs.mainNavigationBar ].buttons[ elementStringIDs.mainNavigationMeButton ].tap()
+            
+            app.tabBars[ elementStringIDs.mainNavigationBar ].buttons[ elementStringIDs.mainNavigationMeButtonOlder ].tap();
+            
+        
             app.tables.element(boundBy: 0).swipeUp()
             app.tables.cells[ elementStringIDs.logOutFromWPcomButton ].tap()
             app.alerts.buttons.element(boundBy: 1).tap()

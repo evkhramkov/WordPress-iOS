@@ -48,8 +48,8 @@ final public class InteractiveNotificationsManager: NSObject {
             return
         }
 
-        let notificationCenter = UNUserNotificationCenter.current()
-        notificationCenter.requestAuthorization(options: [.badge, .sound, .alert], completionHandler: { _ in })
+        //let notificationCenter = UNUserNotificationCenter.current()
+        //notificationCenter.requestAuthorization(options: [.badge, .sound, .alert], completionHandler: { _ in })
     }
 
     /// Handle an action taken from a remote notification

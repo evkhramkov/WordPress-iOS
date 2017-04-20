@@ -81,7 +81,7 @@ final public class PushNotificationsManager: NSObject {
             return
         }
 
-        sharedApplication.registerForRemoteNotifications()
+        //sharedApplication.registerForRemoteNotifications()
     }
 
 

@@ -14,6 +14,7 @@ class LoginTests: XCTestCase {
         XCUIApplication().launch()
         app = XCUIApplication()
 
+        sleep(2) // stabilize launch before screenshot
         // Logout first if needed
         logoutIfNeeded()
     }
